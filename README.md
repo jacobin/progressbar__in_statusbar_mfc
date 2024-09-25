@@ -2,10 +2,7 @@
 
 An easy way to add a progress control to a status bar
 
-
-- [Download source - 4.6 Kb](https://raw.githubusercontent.com/ChrisMaunder/progressbar/master/docs/assets/ProgressBar_src.zip)
-
-![Sample Image](https://raw.githubusercontent.com/ChrisMaunder/progressbar/master/docs/assets/ProgressBar.gif)
+![Sample Image](https://raw.githubusercontent.com/ChrisMaunder/progressbar/master/docs/assets/progressbar.gif)
 
 Adding a `CProgressCtrl `to the status bar has already been addressed by Brad Mann. His method involved modifying the status bar and messing around with the resource editor. I developed a separate CProgressBar class in order to allow the programmer to just drop in a progress bar whereever they wanted using a single "`CProgressBar Bar(...)`" declaration, which would initialise and display itself and clean up after itself after it was done. The progress bar can also be created once (say as a member variable) and reused multiple times. This new version of the progress bar also resizes itself if the status bar size changes. 
 
