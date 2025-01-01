@@ -9,7 +9,7 @@
 #endif // _MSC_VER >= 1000
 
 #ifndef __AFXWIN_H__
-	#error include 'stdafx.h' before including this file for PCH
+#error include 'stdafx.h' before including this file for PCH
 #endif
 
 #include "resource.h"       // main symbols
@@ -22,21 +22,21 @@
 class CProgressDemoApp : public CWinApp
 {
 public:
-	CProgressDemoApp();
+    CProgressDemoApp();
 
-// Overrides
-	// ClassWizard generated virtual function overrides
-	//{{AFX_VIRTUAL(CProgressDemoApp)
-	public:
-	virtual BOOL InitInstance();
-	//}}AFX_VIRTUAL
+    // Overrides
+    // ClassWizard generated virtual function overrides
+    //{{AFX_VIRTUAL(CProgressDemoApp)
+public:
+    virtual BOOL InitInstance();
+    //}}AFX_VIRTUAL
 
-// Implementation
+    // Implementation
 
-	//{{AFX_MSG(CProgressDemoApp)
-	afx_msg void OnAppAbout();
-	//}}AFX_MSG
-	DECLARE_MESSAGE_MAP()
+    //{{AFX_MSG(CProgressDemoApp)
+    afx_msg void OnAppAbout();
+    //}}AFX_MSG
+    DECLARE_MESSAGE_MAP()
 };
 
 

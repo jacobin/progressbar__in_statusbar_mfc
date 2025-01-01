@@ -18,8 +18,8 @@ static char THIS_FILE[] = __FILE__;
 IMPLEMENT_DYNCREATE(CProgressDemoDoc, CDocument)
 
 BEGIN_MESSAGE_MAP(CProgressDemoDoc, CDocument)
-	//{{AFX_MSG_MAP(CProgressDemoDoc)
-	//}}AFX_MSG_MAP
+    //{{AFX_MSG_MAP(CProgressDemoDoc)
+    //}}AFX_MSG_MAP
 END_MESSAGE_MAP()
 
 /////////////////////////////////////////////////////////////////////////////
@@ -35,25 +35,23 @@ CProgressDemoDoc::~CProgressDemoDoc()
 
 BOOL CProgressDemoDoc::OnNewDocument()
 {
-	if (!CDocument::OnNewDocument())
-		return FALSE;
+    if (!CDocument::OnNewDocument())
+        return FALSE;
 
-	return TRUE;
+    return TRUE;
 }
-
-
 
 /////////////////////////////////////////////////////////////////////////////
 // CProgressDemoDoc serialization
 
 void CProgressDemoDoc::Serialize(CArchive& ar)
 {
-	if (ar.IsStoring())
-	{
-	}
-	else
-	{
-	}
+    if (ar.IsStoring())
+    {
+    }
+    else
+    {
+    }
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -62,12 +60,12 @@ void CProgressDemoDoc::Serialize(CArchive& ar)
 #ifdef _DEBUG
 void CProgressDemoDoc::AssertValid() const
 {
-	CDocument::AssertValid();
+    CDocument::AssertValid();
 }
 
 void CProgressDemoDoc::Dump(CDumpContext& dc) const
 {
-	CDocument::Dump(dc);
+    CDocument::Dump(dc);
 }
 #endif //_DEBUG
 

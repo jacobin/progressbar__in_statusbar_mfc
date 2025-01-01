@@ -13,38 +13,38 @@
 class CProgressDemoDoc : public CDocument
 {
 protected: // create from serialization only
-	CProgressDemoDoc();
-	DECLARE_DYNCREATE(CProgressDemoDoc)
+    CProgressDemoDoc();
+    DECLARE_DYNCREATE(CProgressDemoDoc)
 
-// Attributes
+    // Attributes
 public:
 
-// Operations
+    // Operations
 public:
 
-// Overrides
-	// ClassWizard generated virtual function overrides
-	//{{AFX_VIRTUAL(CProgressDemoDoc)
-	public:
-	virtual BOOL OnNewDocument();
-	virtual void Serialize(CArchive& ar);
-	//}}AFX_VIRTUAL
-
-// Implementation
+    // Overrides
+    // ClassWizard generated virtual function overrides
+    //{{AFX_VIRTUAL(CProgressDemoDoc)
 public:
-	virtual ~CProgressDemoDoc();
+    virtual BOOL OnNewDocument();
+    virtual void Serialize(CArchive& ar);
+    //}}AFX_VIRTUAL
+
+    // Implementation
+public:
+    virtual ~CProgressDemoDoc();
 #ifdef _DEBUG
-	virtual void AssertValid() const;
-	virtual void Dump(CDumpContext& dc) const;
+    virtual void AssertValid() const;
+    virtual void Dump(CDumpContext& dc) const;
 #endif
 
 protected:
 
-// Generated message map functions
+    // Generated message map functions
 protected:
-	//{{AFX_MSG(CProgressDemoDoc)
-	//}}AFX_MSG
-	DECLARE_MESSAGE_MAP()
+    //{{AFX_MSG(CProgressDemoDoc)
+    //}}AFX_MSG
+    DECLARE_MESSAGE_MAP()
 };
 
 /////////////////////////////////////////////////////////////////////////////

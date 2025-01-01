@@ -12,44 +12,44 @@
 class CMainFrame : public CFrameWnd
 {
 protected: // create from serialization only
-	CMainFrame();
-	DECLARE_DYNCREATE(CMainFrame)
+    CMainFrame();
+    DECLARE_DYNCREATE(CMainFrame)
 
-// Attributes
+    // Attributes
 public:
 
-// Operations
+    // Operations
 public:
 
-// Overrides
-	// ClassWizard generated virtual function overrides
-	//{{AFX_VIRTUAL(CMainFrame)
-	virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
-	//}}AFX_VIRTUAL
+    // Overrides
+    // ClassWizard generated virtual function overrides
+    //{{AFX_VIRTUAL(CMainFrame)
+    virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
+    //}}AFX_VIRTUAL
 
 // Implementation
 public:
-	virtual ~CMainFrame();
+    virtual ~CMainFrame();
 #ifdef _DEBUG
-	virtual void AssertValid() const;
-	virtual void Dump(CDumpContext& dc) const;
+    virtual void AssertValid() const;
+    virtual void Dump(CDumpContext& dc) const;
 #endif
 
 protected:  // control bar embedded members
-	CStatusBar  m_wndStatusBar;
-	CToolBar    m_wndToolBar;
+    CStatusBar  m_wndStatusBar;
+    CToolBar    m_wndToolBar;
 
-// Generated message map functions
+    // Generated message map functions
 protected:
-	//{{AFX_MSG(CMainFrame)
-	afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
-	afx_msg void OnTestBar();
-	afx_msg void OnTestSmoothbar();
-	afx_msg void OnTestStdbar();
-	afx_msg void OnTestChangetext();
-	afx_msg void OnTestPane2();
-	//}}AFX_MSG
-	DECLARE_MESSAGE_MAP()
+    //{{AFX_MSG(CMainFrame)
+    afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
+    afx_msg void OnTestBar();
+    afx_msg void OnTestSmoothbar();
+    afx_msg void OnTestStdbar();
+    afx_msg void OnTestChangetext();
+    afx_msg void OnTestPane2();
+    //}}AFX_MSG
+    DECLARE_MESSAGE_MAP()
 };
 
 /////////////////////////////////////////////////////////////////////////////

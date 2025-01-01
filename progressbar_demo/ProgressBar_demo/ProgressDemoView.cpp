@@ -19,8 +19,8 @@ static char THIS_FILE[] = __FILE__;
 IMPLEMENT_DYNCREATE(CProgressDemoView, CView)
 
 BEGIN_MESSAGE_MAP(CProgressDemoView, CView)
-	//{{AFX_MSG_MAP(CProgressDemoView)
-	//}}AFX_MSG_MAP
+    //{{AFX_MSG_MAP(CProgressDemoView)
+    //}}AFX_MSG_MAP
 END_MESSAGE_MAP()
 
 /////////////////////////////////////////////////////////////////////////////
@@ -36,7 +36,7 @@ CProgressDemoView::~CProgressDemoView()
 
 BOOL CProgressDemoView::PreCreateWindow(CREATESTRUCT& cs)
 {
-	return CView::PreCreateWindow(cs);
+    return CView::PreCreateWindow(cs);
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -44,8 +44,8 @@ BOOL CProgressDemoView::PreCreateWindow(CREATESTRUCT& cs)
 
 void CProgressDemoView::OnDraw(CDC* pDC)
 {
-	CProgressDemoDoc* pDoc = GetDocument();
-	ASSERT_VALID(pDoc);
+    CProgressDemoDoc* pDoc = GetDocument();
+    ASSERT_VALID(pDoc);
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -54,18 +54,18 @@ void CProgressDemoView::OnDraw(CDC* pDC)
 #ifdef _DEBUG
 void CProgressDemoView::AssertValid() const
 {
-	CView::AssertValid();
+    CView::AssertValid();
 }
 
 void CProgressDemoView::Dump(CDumpContext& dc) const
 {
-	CView::Dump(dc);
+    CView::Dump(dc);
 }
 
 CProgressDemoDoc* CProgressDemoView::GetDocument() // non-debug version is inline
 {
-	ASSERT(m_pDocument->IsKindOf(RUNTIME_CLASS(CProgressDemoDoc)));
-	return (CProgressDemoDoc*)m_pDocument;
+    ASSERT(m_pDocument->IsKindOf(RUNTIME_CLASS(CProgressDemoDoc)));
+    return (CProgressDemoDoc*)m_pDocument;
 }
 #endif //_DEBUG
 

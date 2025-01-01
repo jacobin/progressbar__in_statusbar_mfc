@@ -12,45 +12,47 @@
 class CProgressDemoView : public CView
 {
 protected: // create from serialization only
-	CProgressDemoView();
-	DECLARE_DYNCREATE(CProgressDemoView)
+    CProgressDemoView();
+    DECLARE_DYNCREATE(CProgressDemoView)
 
-// Attributes
+    // Attributes
 public:
-	CProgressDemoDoc* GetDocument();
+    CProgressDemoDoc* GetDocument();
 
-// Operations
+    // Operations
 public:
 
-// Overrides
-	// ClassWizard generated virtual function overrides
-	//{{AFX_VIRTUAL(CProgressDemoView)
-	public:
-	virtual void OnDraw(CDC* pDC);  // overridden to draw this view
-	virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
-	protected:
-	//}}AFX_VIRTUAL
-
-// Implementation
+    // Overrides
+    // ClassWizard generated virtual function overrides
+    //{{AFX_VIRTUAL(CProgressDemoView)
 public:
-	virtual ~CProgressDemoView();
+    virtual void OnDraw(CDC* pDC);  // overridden to draw this view
+    virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
+protected:
+    //}}AFX_VIRTUAL
+
+    // Implementation
+public:
+    virtual ~CProgressDemoView();
 #ifdef _DEBUG
-	virtual void AssertValid() const;
-	virtual void Dump(CDumpContext& dc) const;
+    virtual void AssertValid() const;
+    virtual void Dump(CDumpContext& dc) const;
 #endif
 
 protected:
 
-// Generated message map functions
+    // Generated message map functions
 protected:
-	//{{AFX_MSG(CProgressDemoView)
-	//}}AFX_MSG
-	DECLARE_MESSAGE_MAP()
+    //{{AFX_MSG(CProgressDemoView)
+    //}}AFX_MSG
+    DECLARE_MESSAGE_MAP()
 };
 
 #ifndef _DEBUG  // debug version in ProgressDemoView.cpp
 inline CProgressDemoDoc* CProgressDemoView::GetDocument()
-   { return (CProgressDemoDoc*)m_pDocument; }
+{
+    return (CProgressDemoDoc*)m_pDocument;
+}
 #endif
 
 /////////////////////////////////////////////////////////////////////////////
